@@ -6,7 +6,7 @@ Define a constructor `make-segment` and selectors `start-segment` and `end-segme
 
 (define (make-segment start end) (cons start end))
 (define (start-segment seg) (car seg))
-(define (end-segment seg) (end seg))
+(define (end-segment seg) (cdr seg))
 
 #|
 Furthermore, a point can be represented as a pair of numbers: the x coordinate and the y coordinate. Accordingly, specify a constructor `make-point` and selectors `x-point` and `y-point` that define this representation.
